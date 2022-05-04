@@ -50,8 +50,8 @@ font-family: 'Montserrat', sans-serif;
 } */
 
 .cabecera__navegacion {
-    position: absolute;
-    right: 2.5%;
+    /* position: absolute;
+    right: 2.5%; */
 }
 
 .cabecera__imagen {
@@ -107,7 +107,7 @@ a:hover {
 .tituloPrincipal {
     /* grid-area: titulo; */
     font-family: 'Aclonica', sans-serif;
-    margin: 50px 0px 0px 100px;
+    margin: 0px 0px 0px 100px;
     /* align-self: end; */
     font-weight: 600;
     font-size: 50px;
@@ -122,10 +122,8 @@ a:hover {
 }
 
 .foto {
+    width: 450px;
     /* display: inline-block; */
-    max-width: 300px;
-    border-radius: 50px;
-    aspect-ratio: 0.91;
     /* grid-area: imagen; */
     /* transform: translateY(-50px) */
 }
@@ -172,6 +170,7 @@ a:hover {
     border-top: 1px solid black;
     align-items: center;
     height: 70px;
+    justify-content: center;
 }
 
 .contacto,
@@ -187,7 +186,7 @@ a:hover {
     font-weight: 600;
     text-decoration: underline;
     padding: 10px;
-    margin: 50px 0px 50px 90px;
+    margin: 15px 0px 50px 90px;
 }
 
 .galeria__imagen {
@@ -209,7 +208,7 @@ a:hover {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) {
-    .fondo {
+    /* .fondo {
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 100px 250px auto 70px;
     
@@ -284,8 +283,7 @@ a:hover {
         font-size: 12px;
         align-self: center;
         justify-self: center;
-    }
-
+    } */
 
 /* .imput {
     height: 40px;
