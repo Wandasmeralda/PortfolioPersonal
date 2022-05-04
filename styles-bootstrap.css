@@ -56,7 +56,7 @@ font-family: 'Montserrat', sans-serif;
 
 .cabecera__imagen {
     height: 50px;
-    margin: 20px 50px;
+    margin: 20px 40px;
 }
 
 .menu {
@@ -107,25 +107,33 @@ a:hover {
 .tituloPrincipal {
     /* grid-area: titulo; */
     font-family: 'Aclonica', sans-serif;
-    margin: 50px 50px;
+    margin: 50px 0px 0px 100px;
     /* align-self: end; */
     font-weight: 600;
+    font-size: 50px;
 }
 
 .texto {
     color: rgb(0, 0, 0);
-    font-size: 14px;
-    margin: 20px 50px;
+    font-size: 18px;
+    margin: 20px 100px 0px 100px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .foto {
     /* display: inline-block; */
-    max-width: 350px;
+    max-width: 300px;
     border-radius: 50px;
     aspect-ratio: 0.91;
     /* grid-area: imagen; */
-    transform: translateY(-50px)
+    /* transform: translateY(-50px) */
+}
+
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+
 }
 
 .logoAnimado {
@@ -163,6 +171,7 @@ a:hover {
 .footer {
     border-top: 1px solid black;
     align-items: center;
+    height: 70px;
 }
 
 .contacto,
@@ -174,11 +183,11 @@ a:hover {
 .contact-button {
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: underline;
     padding: 10px;
-    margin: 40px;
+    margin: 50px 0px 50px 90px;
 }
 
 .galeria__imagen {
