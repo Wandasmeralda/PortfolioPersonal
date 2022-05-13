@@ -1,2 +1,40 @@
-$font-family: 'Aclonica', sans-serif;
-$font-family: 'Montserrat', sans-serif;
+$tipografia-titulos: 'Aclonica', sans-serif;
+$tipografia-textos: 'Montserrat', sans-serif;
+
+$color-tipografia: black;
+
+$imagen-fondo: url("./imagenes/Fondo1.png");
+$color-fondo: rgb(245, 193, 193);
+
+/* maps */
+$tamaño-tipografia:(
+    titulos: 50px,
+    subtitulos: 16px,
+    texto: 18px,
+    letra-chica: 12px,
+    botones: 20px
+);
+
+$grosor-tipografia:(
+    negrita: 600px,
+    media: 500px
+);
+
+/* EXTEND 
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};*/
+
+/*MIXIN*/
+@mixin margenes ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin flexbox ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+};

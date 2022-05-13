@@ -1,0 +1,65 @@
+.contenido {
+    height: fit-content;
+}
+
+.tituloPrincipal {
+    font-family: $tipografia-titulos;
+    margin: 0px 0px 0px 100px;
+    font-weight: map-get($grosor-tipografia , negrita);
+    font-size: map-get($tamaño-tipografia , titulos);
+}
+
+.texto {
+    color: $color-tipografia;
+    font-size: map-get($tamaño-tipografia , textos);
+    margin: 20px 100px 0px 100px;
+    font-family: $tipografia-textos;
+    font-weight: map-get($grosor-tipografia , media);
+}
+
+.foto {
+    width: 450px;
+}
+
+.contenedorImagen{
+    display: flex;
+    justify-content: center;
+}
+
+.logoAnimado {
+    width: 80px;
+    animation-name: rotarLogo;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    position: absolute;
+    z-index: 1;
+}
+
+/* ANIMACIÓN ICONO GIRATORIO*/
+@keyframes rotarLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    } 
+}
+
+.contact-button {
+    color: $color-tipografia;
+    font-family: $tipografia-textos;
+    font-size: map-get($tamaño-tipografia , botones);
+    font-weight: map-get($grosor-tipografia , negrita);
+    text-decoration: underline;
+    @include margenes(15px 0px 50px 90px, 10px);
+};

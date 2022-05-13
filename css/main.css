@@ -1,1 +1,110 @@
-@import url(./base/_variables.scss);
+@charset "UTF-8";
+/* maps */
+/* EXTEND 
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};*/
+/*MIXIN*/
+.cabecera {
+  height: fit-content;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background: linear-gradient(180deg, rgba(69, 69, 69, 0.975525) 0%, rgba(170, 170, 170, 0) 63%, rgba(255, 255, 255, 0) 100%); }
+  .cabecera__imagen {
+    height: 50px;
+    margin: 20px 40px; }
+
+a,
+a:hover {
+  text-decoration: none;
+  color: black; }
+
+.menu {
+  align-items: center;
+  margin: 0; }
+
+.menu li,
+.redes li {
+  list-style-type: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px; }
+
+.menu li {
+  margin: 15px;
+  padding: 7px;
+  transition: transform 1s, border 1s; }
+  .menu li__li:hover {
+    transform: scale(1.2); }
+
+.contenido {
+  height: fit-content; }
+
+.tituloPrincipal {
+  font-family: "Aclonica", sans-serif;
+  margin: 0px 0px 0px 100px;
+  font-weight: 600px;
+  font-size: 50px; }
+
+.texto {
+  color: black;
+  margin: 20px 100px 0px 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px; }
+
+.foto {
+  width: 450px; }
+
+.contenedorImagen {
+  display: flex;
+  justify-content: center; }
+
+.logoAnimado {
+  width: 80px;
+  animation-name: rotarLogo;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  position: absolute;
+  z-index: 1; }
+
+/* ANIMACIÓN ICONO GIRATORIO*/
+@keyframes rotarLogo {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(45deg); }
+  50% {
+    transform: rotate(90deg); }
+  75% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.contact-button {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600px;
+  text-decoration: underline;
+  margin: 15px 0px 50px 90px;
+  padding: 10px; }
+
+.footer {
+  border-top: 1px solid black;
+  align-items: center;
+  height: 70px;
+  justify-content: center; }
+
+.contacto,
+.redes,
+.derechos {
+  margin: 0; }
+
+.redes {
+  justify-content: center;
+  align-items: center; }
+  .redes__redes img {
+    height: 30px; }
