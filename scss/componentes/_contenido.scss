@@ -5,16 +5,16 @@
 .tituloPrincipal {
     font-family: $tipografia-titulos;
     margin: 0px 0px 0px 100px;
-    font-weight: map-get($grosor-tipografia , negrita);
-    font-size: map-get($tamaño-tipografia , titulos);
+    font-weight: map-get($grosor-tipografia, "negrita");
+    font-size: map-get($tamaño-tipografia, "titulos");
 }
 
 .texto {
     color: $color-tipografia;
-    font-size: map-get($tamaño-tipografia , textos);
+    font-size: map-get($tamaño-tipografia, "textos");
     margin: 20px 100px 0px 100px;
     font-family: $tipografia-textos;
-    font-weight: map-get($grosor-tipografia , media);
+    font-weight: map-get($grosor-tipografia, "media");
 }
 
 .foto {
@@ -58,8 +58,8 @@
 .contact-button {
     color: $color-tipografia;
     font-family: $tipografia-textos;
-    font-size: map-get($tamaño-tipografia , botones);
-    font-weight: map-get($grosor-tipografia , negrita);
+    font-size: map-get($tamaño-tipografia , "botones");
+    font-weight: map-get($grosor-tipografia , "negrita");
     text-decoration: underline;
     @include margenes(15px 0px 50px 90px, 10px);
 };

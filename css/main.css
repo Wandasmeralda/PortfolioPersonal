@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* VARIABLES */
 /* maps */
 /* EXTEND 
 %flex-center{
@@ -30,7 +31,7 @@ a:hover {
   list-style-type: none;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500px; }
+  font-weight: 500; }
 
 .menu li {
   margin: 15px;
@@ -45,14 +46,14 @@ a:hover {
 .tituloPrincipal {
   font-family: "Aclonica", sans-serif;
   margin: 0px 0px 0px 100px;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 50px; }
 
 .texto {
   color: black;
   margin: 20px 100px 0px 100px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500px; }
+  font-weight: 500; }
 
 .foto {
   width: 450px; }
@@ -87,7 +88,7 @@ a:hover {
   color: black;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  font-weight: 600px;
+  font-weight: 600;
   text-decoration: underline;
   margin: 15px 0px 50px 90px;
   padding: 10px; }
@@ -108,3 +109,19 @@ a:hover {
   align-items: center; }
   .redes__redes img {
     height: 30px; }
+
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.fondo {
+  background-color: #f5c1c1;
+  background-image: url("../imagenes/Fondo1.png");
+  height: 100vh;
+  max-width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
