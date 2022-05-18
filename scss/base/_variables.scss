@@ -5,20 +5,22 @@ $tipografia-textos: 'Montserrat', sans-serif;
 $color-tipografia: black;
 
 $imagen-fondo: url("./imagenes/Fondo1.png");
-$color-fondo: rgb(245, 193, 193);
+$color-fondo: #F8F1F1;
 
 /* maps */
 $tamaño-tipografia:(
-    "titulos": 50px,
-    "subtitulos": 16px,
+    "titulos": 48px,
+    "subtitulos": 24px,
+    "menu": 14px,
     "texto": 18px,
     "letra-chica": 12px,
-    "botones": 20px,
+    "botones": 18px,
 );
 
 $grosor-tipografia:(
-    "negrita": 600,
-    "media": 500,
+    "semibold": 600,
+    "medium": 500,
+    "regular": 400,
 );
 
 /* EXTEND 

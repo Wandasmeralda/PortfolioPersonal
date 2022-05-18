@@ -11,56 +11,115 @@
 .cabecera {
   height: fit-content;
   align-items: center;
-  border-bottom: 1px solid black;
-  background: linear-gradient(180deg, rgba(69, 69, 69, 0.975525) 0%, rgba(170, 170, 170, 0) 63%, rgba(255, 255, 255, 0) 100%); }
-  .cabecera__imagen {
-    height: 50px;
+  background-image: url("../imagenes/fondo-header-footer.svg");
+  background-size: cover;
+  background-position: center; }
+  .cabecera__logo {
+    height: 30px;
     margin: 20px 40px; }
+  .cabecera__menu {
+    align-items: center;
+    margin: 0; }
+    .cabecera__menu-item {
+      list-style-type: none;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      margin: 15px;
+      padding: 7px;
+      transition: transform 1s, border 1s; }
+      .cabecera__menu-item:hover {
+        transform: scale(1.1);
+        animation-duration: 3s; }
+      .cabecera__menu-item-link:hover {
+        color: #F8F1F1; }
 
-a,
-a:hover {
-  text-decoration: none;
-  color: black; }
-
-.menu {
-  align-items: center;
-  margin: 0; }
-
-.menu li,
-.redes li {
-  list-style-type: none;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500; }
-
-.menu li {
-  margin: 15px;
-  padding: 7px;
-  transition: transform 1s, border 1s; }
-  .menu li__li:hover {
-    transform: scale(1.2); }
-
-.contenido {
+.contenido__info {
   height: fit-content; }
 
-.tituloPrincipal {
+.contenido__titulo {
   font-family: "Aclonica", sans-serif;
-  margin: 0px 0px 0px 100px;
+  margin: 100px 0px 0px 100px;
   font-weight: 600;
-  font-size: 50px; }
+  font-size: 48px; }
+  .contenido__titulo-trabajos {
+    font-family: "Aclonica", sans-serif;
+    margin: 80px 0px 50px 0px;
+    font-weight: 600;
+    font-size: 48px;
+    display: flex;
+    justify-content: center; }
 
-.texto {
+.contenido__secundario {
+  display: flex;
+  justify-content: space-around; }
+
+.contenido__subtitulos {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 20px 0px;
+  font-family: "Aclonica", sans-serif;
+  font-size: 24px; }
+  .contenido__subtitulos-sobremi {
+    display: flex;
+    justify-content: left;
+    font-family: "Aclonica", sans-serif;
+    font-size: 24px;
+    margin: 50px 0px 20px 200px; }
+
+.contenido__titulos-fotos, .contenido__lista {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 80px;
+  font-weight: 500; }
+
+.contenido__texto {
   color: black;
   margin: 20px 100px 0px 100px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500; }
+  font-weight: 400; }
 
-.foto {
-  width: 450px; }
+.contenido__texto-trabajos {
+  color: black;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0px 70px 50px 70px; }
 
-.contenedorImagen {
+.contenido__imagen {
   display: flex;
   justify-content: center; }
+  .contenido__imagen-foto {
+    width: 400px; }
+  .contenido__imagen-trabajos {
+    width: 100%; }
+
+.contenido__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-decoration: underline;
+  margin: 5px 70px;
+  padding: 10px;
+  font-weight: 600; }
+
+.contenido__boton {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 15px 0px 50px 90px;
+  padding: 10px; }
+
+.contenido--contacto {
+  display: flex; }
+
+.contenido__formulario {
+  border: 2px solid black;
+  width: 400px;
+  height: 500px; }
+
+.contenido__destellos {
+  width: 60px; }
 
 .logoAnimado {
   width: 80px;
@@ -84,44 +143,40 @@ a:hover {
   100% {
     transform: rotate(360deg); } }
 
-.contact-button {
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: underline;
-  margin: 15px 0px 50px 90px;
-  padding: 10px; }
-
 .footer {
-  border-top: 1px solid black;
   align-items: center;
-  height: 70px;
-  justify-content: center; }
-
-.contacto,
-.redes,
-.derechos {
-  margin: 0; }
-
-.redes {
+  height: 100px;
   justify-content: center;
-  align-items: center; }
-  .redes__redes img {
-    height: 30px; }
+  background-image: url("../imagenes/fondo-header-footer.svg");
+  background-size: cover;
+  background-position: center; }
+  .footer__contacto, .footer__derechos {
+    margin: 0 20px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; }
+  .footer__redes {
+    margin: 0;
+    justify-content: center;
+    align-items: center; }
+    .footer__redes-item {
+      list-style-type: none; }
+    .footer__redes-logo {
+      height: 30px; }
+
+.fondo {
+  background-color: #F8F1F1;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 * {
   margin: 0%;
   padding: 0%; }
 
-.fondo {
-  background-color: #f5c1c1;
-  background-image: url("../imagenes/Fondo1.png");
-  height: 100vh;
-  max-width: 100vw;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+a,
+a:hover {
+  text-decoration: none;
+  color: black; }

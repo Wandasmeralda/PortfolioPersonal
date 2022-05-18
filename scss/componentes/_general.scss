@@ -1,18 +1,7 @@
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
 .fondo {
     background-color: $color-fondo;
-    background-image: url("../imagenes/Fondo1.png");
-    height: 100vh;
     max-width: 100vw;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

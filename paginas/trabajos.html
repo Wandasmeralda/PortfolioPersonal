@@ -24,69 +24,97 @@
         rel="stylesheet">
 </head>
 
-<body class="fondo">
-    <header class="cabecera">
-        <a href="../index.html" class="cabecera__home-link">
-            <img src="../imagenes/logo-potfolio-wanda.svg" alt="logo portfolio WandaEsmeralda" class="cabecera__imagen">
+<body class="fondo container-fluid">
+    <header class="cabecera row">
+        <a href="../index.html" class="cabecera__home-link col-md-3 col-12">
+            <img src="../imagenes/logo-potfolio-wanda.svg" alt="logo portfolio WandaEsmeralda" class="cabecera__logo col-md-3 col-12">
         </a>
 
-        <nav class="cabecera__navegacion">
-            <ul class="menu">
-                <li>
-                    <a href="./sobremi.html">SOBRE MI</a>
+        <nav class="cabecera__navegacion col-md-6 offset-md-3 col-12">
+            <ul class="cabecera__menu row">
+                <li class="cabecera__menu-item col">
+                    <a class="cabecera__menu-item-link" href="../paginas/sobremi.html">SOBRE MI</a>
                 </li>
-                <li>
-                    <a href="#">TRABAJOS</a>
+                <li class="cabecera__menu-item col">
+                    <a class="cabecera__menu-item-link" href="#">TRABAJOS</a>
                 </li>
-                <li>
-                    <a href="./servicios.html">SERVICIOS</a>
+                <li class="cabecera__menu-item col">
+                    <a class="cabecera__menu-item-link" href="../paginas/servicios.html">SERVICIOS</a>
                 </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
+                <li class="cabecera__menu-item col">
+                    <a class="cabecera__menu-item-link" href="../paginas/contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <h1 class="tituloPrincipal">Mis trabajos</h1>
+    <h1 class="contenido__titulo-trabajos">Mis trabajos</h1>
 
-    <main class="contenido">
-        <p class="texto">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias reiciendis fugiat
-            quisquam, excepturi aperiam est voluptatum, dolores, nobis iure voluptatibus voluptas laboriosam nesciunt
-            suscipit nulla minima tenetur id voluptates esse.
-            Neque soluta laborum blanditiis quas animi! Saepe inventore architecto non suscipit similique ex expedita,
-            sit itaque at repellendus, sapiente quod odio nemo? Voluptatum illo quasi commodi et aspernatur voluptates
-            culpa!
-            Similique eveniet impedit obcaecati ratione debitis, aliquam saepe quas illum? Veniam inventore molestiae
-            harum velit culpa mollitia quo consectetur illum cumque. Dolor sint accusantium deleniti. Delectus
-            laudantium doloribus exercitationem magni!
-            Pariatur assumenda rerum veritatis. Atque culpa eos omnis impedit in earum similique unde, harum eveniet
-            quis molestias est nesciunt magnam labore adipisci, nihil voluptatibus aliquid. Nemo iure tempore ut
-            eveniet.
+    <main class="contenido row">
+        <p class="contenido__subtitulos">Diseño Industrial</p>
+        <p class="contenido__titulos-fotos">
+            GIA - Pinza Laparoscópica Ergonómica (2020)
+        </p>
+        <img src="../imagenes/GIA.jpg" alt="GIA" class="contenido__imagen-trabajos">
+            <a href="https://www.behance.net/gallery/110559427/TRABAJO-FINAL-DISENO-INDUSTRIAL" class="contenido__link">Ver más</a>
+        <p class="contenido__texto-trabajos">
+            GÍA es el resultado final de la tesis de la carrera de Diseño Industrial. Dónde la problemátca fue “Posturas forzadas de cirujanos durante la intervención quirúrgica con la técnica laparoscópica dentro del quirófano”. 
+            Se trabajó desde la búsqueda de una problemática dentro del ámbito médico, pasando por la investigación, conceptualización, diseño, verificación, hasta la estrategia de comercialización.
+        </p>
+
+        <p class="contenido__subtitulos">Diseño Gráfico</p>
+        <p class="contenido__titulos-fotos">
+            Simón Dice (2018)
+        </p>
+        <img src="../imagenes/Simon-dice.jpg" alt="GIA" class="contenido__imagen-trabajos">
+            <a href="https://www.behance.net/gallery/110611907/DISENO-DE-LOGO-Simon-Dice" class="contenido__link">Ver más</a>
+        <p class="contenido__texto-trabajos">
+            Diseño de marca para emprendimiento de venta de ropa para niñxs entre 0 y 10 años.
+        </p>
+
+        <p class="contenido__titulos-fotos">
+            Pepita's Club (2020)
+        </p>
+        <img src="../imagenes/Pepita's-Club.png" alt="GIA" class="contenido__imagen-trabajos">
+            <a href="https://www.behance.net/gallery/128300035/Manual-de-marca-Pepitas-Club" class="contenido__link">Ver más</a>
+        <p class="contenido__texto-trabajos">
+            Diseño de marca para guardería de perros.
+        </p>
+
+       <!-- <img src="../imagenes/Destellos-16.svg" alt="Destellos" class="contenido__destellos"> --> 
+
+        <p class="contenido__subtitulos">Diseño UX/UI</p>
+        <p class="contenido__titulos-fotos">
+            VotAR (2020)
+        </p>
+        <img src="../imagenes/VotAR.png" alt="GIA" class="contenido__imagen-trabajos">
+            <a href="https://www.behance.net/gallery/128960403/VotAR-Trabajo-final-Diseno-UXUI-CoderHouse" class="contenido__link">Ver más</a>
+        <p class="contenido__texto-trabajos">
+            Diseño de aplicación para la búsqueda de información electoral. Tanto como de candidatos hasta del lugar a donde ir a emitir el voto.
         </p>
     </main>
 
-    <img src="../imagenes/foto wanda.jpg" alt="wanda riendose" class="foto">
-    
-    <footer class="footer">
-        <ul class="redes">
-            <li>
+    <footer class="footer row">
+        <p class="footer__contacto col">
+            Wanda Esmeralda Fuentes
+            wandasmeralda@gmail.com
+            Córdoba Capital, Arg.
+        </p>
+        <ul class="footer__redes row col-md-8">
+            <li class="footer__redes-item col-auto">
                 <a href="https://www.linkedin.com/in/wanda-esmeralda-fuentes-99b6a7191/" target="_blank">
-                    <img src="../imagenes/Icono linkedin.svg" alt="">
+                    <img class="footer__redes-logo" src="../imagenes/Icono linkedin.svg" alt="Linkedin">
                 </a>
             </li>
-            <li>
+            <li class="footer__redes-item col-auto">
                 <a href="https://www.behance.net/wandafuentes" target="_blank">
-                    <img src="../imagenes/Icono behance.svg" alt="">
-                </a>
-            </li>
-            <li>
-                <a href="wandasmeralda@gmail.com" target="_black">
-                    <img src="../imagenes/Icono mail.svg" alt="">
+                    <img class="footer__redes-logo" src="../imagenes/Icono behance.svg" alt="Behance">
                 </a>
             </li>
         </ul>
+        <p class="footer__derechos col">
+            Todos los derechos reservados
+        </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

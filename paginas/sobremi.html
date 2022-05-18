@@ -24,40 +24,43 @@
         rel="stylesheet">
 </head>
 
-<body class="fondo container-fluid">
-    <header class="row cabecera">
-        <a href="../index.html" class="cabecera__home-link col-md-3 col-12">
-            <img src="../imagenes/logo-potfolio-wanda.svg" alt="logo portfolio WandaEsmeralda" class="cabecera__imagen col-md-3 col-12">
-        </a>
+    <body class="fondo container-fluid">
+        <header class="cabecera row">
+            <a href="../index.html" class="cabecera__home-link col-md-3 col-12">
+                <img src="../imagenes/logo-potfolio-wanda.svg" alt="logo portfolio WandaEsmeralda" class="cabecera__logo col-md-3 col-12">
+            </a>
+    
+            <nav class="cabecera__navegacion col-md-6 offset-md-3 col-12">
+                <ul class="cabecera__menu row">
+                    <li class="cabecera__menu-item col">
+                        <a class="cabecera__menu-item-link" href="#">SOBRE MI</a>
+                    </li>
+                    <li class="cabecera__menu-item col">
+                        <a class="cabecera__menu-item-link" href="../paginas/trabajos.html">TRABAJOS</a>
+                    </li>
+                    <li class="cabecera__menu-item col">
+                        <a class="cabecera__menu-item-link" href="../paginas/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="cabecera__menu-item col">
+                        <a class="cabecera__menu-item-link" href="../paginas/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav class="cabecera__navegacion col-md-6 offset-md-3 col-12">
-            <ul class="menu row">
-                <li class="col">
-                    <a href="#">SOBRE MI</a>
-                </li>
-                <li class="col">
-                    <a href="./trabajos.html">TRABAJOS</a>
-                </li>
-                <li class="col">
-                    <a href="./servicios.html">SERVICIOS</a>
-                </li>
-                <li class="col">
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <h1 class="row tituloPrincipal">Sobre mi</h1>
-
-    <div class="row"> 
-        <main class="contenido col-md-6 col-12">
-            <section class="contenido-principal">
-                <p class="texto">
+    <main class="contenido row"> 
+        <div class="contenido__imagen col-md-6 col-12">
+            <img src="../imagenes/foto wanda.jpg" alt="wanda riendose" class="contenido__imagen-foto">
+        </div>
+        
+        <section class="contenido__info col-md-6 col-12">
+            <h1 class="row contenido__titulo">Sobre mi</h1>
+            <div class="contenido__principal">
+                <p class="contenido__texto">
                     Me considero una diseñadora que buscar
                     resolver problemas a través de la creatividad.
                 </p>
-                <p class="texto">
+                <p class="contenido__texto">
                     En 2013 ingresé a la Universidad Nacional de
                     Córdoba, donde me recibí de Diseñadora
                     Industrial. En paralelo fui aprendiendo de
@@ -65,44 +68,77 @@
                     de Diseño gráfico que luego puse en práctica
                     realizando trabajos para emprendimientos. 
                 </p>
-                <p class="texto">
+                <p class="contenido__texto">
                     Actualmente me encuentro explorando el
                     mundo UX/UI, el cual considero, un gran aliado
                     a la hora de resolver problemas cotidianos y que
                     además están al alcance de todos. 
                 </p>
-            </section>
-        </main>
+            </div>
+        </section>
 
-        <div class="col-md-6 col-12 contenedorImagen">
-             <img src="../imagenes/foto wanda.jpg" alt="wanda riendose" class="foto">
-             <img src="../imagenes/logo-potfolio-wanda.svg" alt="logo animado" class="logoAnimado">
-        </div>
-    </div>
+        <section class="contenido__secundario">
+            <div>
+                <h3 class="contenido__subtitulos-sobremi">Herramientas</h3> 
+                <ul class="contenido__lista">
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe InDesign</li>
+                    <li>Adobe XD</li>
+                    <li>Figma</li>
+                    <li>SolidWorks</li>
+                    <li>KeyShot</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>SASS</li>
+                    <li>Trello</li>
+                    <li>Whimsical</li>
+                    <li>Optimal Workshop</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="contenido__subtitulos-sobremi">Habilidades</h3> 
+                <ul class="contenido__lista">
+                    <li>Diseño de marcas</li>
+                    <li>Diseño de aplicaciones</li>
+                    <li>Diseño de productos</li>
+                    <li>Creación de contenido RR.SS.</li>
+                    <li>Planos técnicos</li>
+                    <li>Modelados 3D</li>
+                    <li>Vectorización</li>
+                    <li>Ilustraciones</li>
+                    <li>Compromiso y motivación</li>
+                    <li>Creatividad</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Proactividad</li>
+                    <li>Investigación y análisis</li>
+                    <li>Pruebas de usabilidad</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
 
     <footer class="footer row">
-        <p class="contacto col">
-            Tel: 35124686416
+        <p class="footer__contacto col">
+            Wanda Esmeralda Fuentes
+            wandasmeralda@gmail.com
+            Córdoba Capital, Arg.
         </p>
-        <ul class="redes row col-md-8">
-            <li class="col-auto">
+        <ul class="footer__redes row col-md-8">
+            <li class="footer__redes-item col-auto">
                 <a href="https://www.linkedin.com/in/wanda-esmeralda-fuentes-99b6a7191/" target="_blank">
-                    <img src="../imagenes/Icono linkedin.svg" alt="">
+                    <img class="footer__redes-logo" src="../imagenes/Icono linkedin.svg" alt="Linkedin">
                 </a>
             </li>
-            <li class="col-auto">
+            <li class="footer__redes-item col-auto">
                 <a href="https://www.behance.net/wandafuentes" target="_blank">
-                    <img src="../imagenes/Icono behance.svg" alt="">
-                </a>
-            </li>
-            <li class="col-auto">
-                <a href="wandasmeralda@gmail.com" target="_black">
-                    <img src="../imagenes/Icono mail.svg" alt="">
+                    <img class="footer__redes-logo" src="../imagenes/Icono behance.svg" alt="Behance">
                 </a>
             </li>
         </ul>
-        <p class="derechos col">
+        <p class="footer__derechos col">
             Todos los derechos reservados
         </p>
     </footer>

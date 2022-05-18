@@ -1,39 +1,36 @@
 .cabecera {
     height: fit-content;
     align-items: center;
-    border-bottom: 1px solid black;
-    background: linear-gradient(180deg, rgba(69,69,69,0.9755252442773985) 0%, rgba(170,170,170,0) 63%, rgba(255,255,255,0) 100%);
+    background-image: url("../imagenes/fondo-header-footer.svg");
+    background-size: cover;
+    background-position: center;
 
-    &__imagen {
-        height: 50px;
+    &__logo {
+        height: 30px;
         margin: 20px 40px;
     }
-};
 
-a,
-a:hover {
-    text-decoration: none;
-    color: $color-tipografia;
-};
+    &__menu {
+        align-items: center;
+        margin: 0;
 
-.menu {
-    align-items: center;
-    margin: 0;
-};
+        &-item {
+            list-style-type: none;
+            font-size: map-get($tamaño-tipografia , "menu");
+            font-family: $tipografia-textos;
+            font-weight: map-get($grosor-tipografia , "semibold");
 
-.menu li,
-.redes li {
-    list-style-type:none;
-    font-size: map-get($tamaño-tipografia , subtitulos);
-    font-family: $tipografia-textos;
-    font-weight: map-get($grosor-tipografia , media);
-};
+            @include margenes(15px, 7px);
+            transition: transform 1s, border 1s;
 
-.menu li{
-    @include margenes(15px, 7px);
-    transition: transform 1s, border 1s;
+            &:hover {
+                transform: scale(1.1);
+                animation-duration: 3s;
+            }
 
-    &__li:hover {
-        transform: scale(1.2);
-    }
+            &-link:hover {
+                color: $color-fondo;
+            }
+        };
+    };
 };

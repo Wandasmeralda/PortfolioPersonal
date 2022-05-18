@@ -1,21 +1,30 @@
 .footer {
-    border-top: 1px solid black;
     align-items: center;
-    height: 70px;
-    justify-content: center; 
-}
-
-.contacto,
-.redes,
-.derechos {
-    margin: 0;
-};
-
-.redes {
+    height: 100px;
     justify-content: center;
-    align-items: center;
+    background-image: url("../imagenes/fondo-header-footer.svg");
+    background-size: cover;
+    background-position: center;
 
-    &__redes img {
-        height: 30px;
-    }
-};
+    &__contacto,
+    &__derechos {
+        margin: 0 20px;
+        font-size: map-get($tamaño-tipografia , "letra-chica");
+        font-family: $tipografia-textos;
+        font-weight: map-get($grosor-tipografia , "medium");
+    };
+    
+    &__redes {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+        &-item {
+            list-style-type: none;
+        }
+
+        &-logo {
+            height: 30px;
+        }
+    };
+}

@@ -3,3 +3,14 @@
 @import "./componentes/contenido";
 @import "./componentes/footer";
 @import "./componentes/general";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: $color-tipografia;
+}

@@ -1,29 +1,110 @@
-.contenido {
+.contenido__info {
     height: fit-content;
 }
 
-.tituloPrincipal {
+.contenido__titulo {
     font-family: $tipografia-titulos;
-    margin: 0px 0px 0px 100px;
-    font-weight: map-get($grosor-tipografia, "negrita");
+    margin: 100px 0px 0px 100px;
+    font-weight: map-get($grosor-tipografia, "semibold");
     font-size: map-get($tamaño-tipografia, "titulos");
+
+    &-trabajos {    
+        font-family: $tipografia-titulos;
+        margin: 80px 0px 50px 0px;
+        font-weight: map-get($grosor-tipografia, "semibold");
+        font-size: map-get($tamaño-tipografia, "titulos");
+        display: flex;
+        justify-content: center;
+    }
+};
+
+.contenido__secundario {
+    display: flex;
+    justify-content: space-around;
 }
 
-.texto {
+.contenido__subtitulos {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+    font-family: $tipografia-titulos;
+    font-size: map-get($tamaño-tipografia, "subtitulos");
+
+    &-sobremi {
+        display: flex;
+        justify-content: left;
+        font-family: $tipografia-titulos;
+        font-size: map-get($tamaño-tipografia, "subtitulos");
+        margin: 50px 0px 20px 200px;
+    }
+}
+
+.contenido__titulos-fotos, .contenido__lista {
+    font-family: $tipografia-textos;
+    font-size: map-get($tamaño-tipografia, "textos");
+    margin-left: 80px;
+    font-weight: map-get($grosor-tipografia, "medium");
+}
+
+
+.contenido__texto {
     color: $color-tipografia;
     font-size: map-get($tamaño-tipografia, "textos");
     margin: 20px 100px 0px 100px;
     font-family: $tipografia-textos;
-    font-weight: map-get($grosor-tipografia, "media");
+    font-weight: map-get($grosor-tipografia, "regular");
 }
 
-.foto {
-    width: 450px;
+.contenido__texto-trabajos{
+    color: $color-tipografia;
+    font-size: map-get($tamaño-tipografia, "menu");
+    font-family: $tipografia-textos;
+    font-weight: map-get($grosor-tipografia, "regular");
+    margin: 0px 70px 50px 70px;
 }
 
-.contenedorImagen{
+.contenido__imagen {
     display: flex;
     justify-content: center;
+
+    &-foto {
+        width: 400px;
+    }
+
+    &-trabajos {
+        width: 100%;
+    }
+}
+
+.contenido__link {
+    font-family: $tipografia-textos;
+    font-size: map-get($tamaño-tipografia , "letra-chica");
+    text-decoration: underline;
+    @include margenes(5px 70px, 10px);
+    font-weight: map-get($grosor-tipografia , "semibold");
+}
+
+.contenido__boton {
+    color: $color-tipografia;
+    font-family: $tipografia-textos;
+    font-size: map-get($tamaño-tipografia , "botones");
+    font-weight: map-get($grosor-tipografia , "semibold");
+    text-decoration: underline;
+    @include margenes(15px 0px 50px 90px, 10px);
+};
+
+.contenido--contacto {
+    display: flex;
+}
+
+.contenido__formulario {
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+}
+
+.contenido__destellos {
+    width: 60px;
 }
 
 .logoAnimado {
@@ -54,12 +135,3 @@
         transform: rotate(360deg);
     } 
 }
-
-.contact-button {
-    color: $color-tipografia;
-    font-family: $tipografia-textos;
-    font-size: map-get($tamaño-tipografia , "botones");
-    font-weight: map-get($grosor-tipografia , "negrita");
-    text-decoration: underline;
-    @include margenes(15px 0px 50px 90px, 10px);
-};
