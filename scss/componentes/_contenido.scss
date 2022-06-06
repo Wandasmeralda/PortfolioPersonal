@@ -1,14 +1,15 @@
 .contenido__info {
     height: fit-content;
+    margin-top: 50px;
 }
 
 .contenido__titulo {
     font-family: $tipografia-titulos;
-    margin: 100px 0px 0px 100px;
+    // margin: 100px 0px 0px 100px;
     font-weight: map-get($grosor-tipografia, "semibold");
     font-size: map-get($tamaño-tipografia, "titulos");
 
-    &-trabajos {    
+    &-trabajos {
         font-family: $tipografia-titulos;
         margin: 80px 0px 50px 0px;
         font-weight: map-get($grosor-tipografia, "semibold");
@@ -16,7 +17,17 @@
         display: flex;
         justify-content: center;
     }
-};
+}
+
+.contenido__principal {
+    display: flex;
+    flex-direction: column;
+
+    &--contacto {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
 
 .contenido__secundario {
     display: flex;
@@ -30,45 +41,48 @@
     font-family: $tipografia-titulos;
     font-size: map-get($tamaño-tipografia, "subtitulos");
 
-    &-sobremi {
-        display: flex;
-        justify-content: left;
+    &--sobremi {
         font-family: $tipografia-titulos;
         font-size: map-get($tamaño-tipografia, "subtitulos");
-        margin: 50px 0px 20px 200px;
     }
 }
 
-.contenido__titulos-fotos, .contenido__lista {
+.contenido__skills {
+    margin: 50px 0;
+}
+
+.contenido__titulos-fotos,
+.contenido__lista {
     font-family: $tipografia-textos;
     font-size: map-get($tamaño-tipografia, "textos");
-    margin-left: 80px;
     font-weight: map-get($grosor-tipografia, "medium");
+    list-style-type: circle;
 }
 
 
 .contenido__texto {
     color: $color-tipografia;
     font-size: map-get($tamaño-tipografia, "textos");
-    margin: 20px 100px 0px 100px;
+    margin: 20px 0;
     font-family: $tipografia-textos;
     font-weight: map-get($grosor-tipografia, "regular");
 }
 
-.contenido__texto-trabajos{
+.contenido__texto-trabajos {
     color: $color-tipografia;
     font-size: map-get($tamaño-tipografia, "menu");
     font-family: $tipografia-textos;
     font-weight: map-get($grosor-tipografia, "regular");
-    margin: 0px 70px 50px 70px;
+    margin: 0px 70px 50px 0;
 }
 
 .contenido__imagen {
     display: flex;
     justify-content: center;
+    margin: 50px 0;
 
     &-foto {
-        width: 400px;
+        max-width: 400px;
     }
 
     &-trabajos {
@@ -90,17 +104,52 @@
     font-size: map-get($tamaño-tipografia , "botones");
     font-weight: map-get($grosor-tipografia , "semibold");
     text-decoration: underline;
-    @include margenes(15px 0px 50px 90px, 10px);
-};
-
-.contenido--contacto {
-    display: flex;
 }
 
 .contenido__formulario {
-    border: 2px solid black;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
     height: 500px;
+    max-width: 400px;
+    padding: 10px 0;
+    margin: 50px 0;
+
+    &-campo {
+        background-color: $color-fondo;
+        border: none;
+        border-bottom: 2px solid black;
+        border-radius: 0;
+
+        &:focus {
+            background-color: $color-fondo;
+            border: none;
+            border-bottom: 2px solid black;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+
+    &-label {
+        font-family: $tipografia-titulos;
+    }
+
+    &-descripcion {
+        font-family: $tipografia-textos;
+    }
+
+    &-consulta {
+        background-color: $color-fondo;
+        border: 2px solid black;
+        border-radius: 0;
+
+        &:focus {
+            background-color: $color-fondo;
+            border: 2px solid black;
+        }
+    }
 }
 
 .contenido__destellos {
@@ -122,16 +171,20 @@
     0% {
         transform: rotate(0deg);
     }
+
     25% {
         transform: rotate(45deg);
     }
+
     50% {
         transform: rotate(90deg);
     }
+
     75% {
         transform: rotate(180deg);
     }
+
     100% {
         transform: rotate(360deg);
-    } 
+    }
 }

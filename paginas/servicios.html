@@ -26,41 +26,51 @@
 
 <body class="fondo container-fluid">
     <header class="cabecera row">
-        <a href="../index.html" class="cabecera__home-link col-md-3 col-12">
-            <img src="../imagenes/logo-potfolio-wanda.svg" alt="logo portfolio WandaEsmeralda" class="cabecera__logo col-md-3 col-12">
-        </a>
-
-        <nav class="cabecera__navegacion col-md-6 offset-md-3 col-12">
-            <ul class="cabecera__menu row">
-                <li class="cabecera__menu-item col">
-                    <a class="cabecera__menu-item-link" href="../paginas/sobremi.html">SOBRE MI</a>
-                </li>
-                <li class="cabecera__menu-item col">
-                    <a class="cabecera__menu-item-link" href="../paginas/trabajos.html">TRABAJOS</a>
-                </li>
-                <li class="cabecera__menu-item col">
-                    <a class="cabecera__menu-item-link" href="#">SERVICIOS</a>
-                </li>
-                <li class="cabecera__menu-item col">
-                    <a class="cabecera__menu-item-link" href="../paginas/contacto.html">CONTACTO</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light cabecera__navegacion">
+            <div class="container-fluid">
+                <button class="navbar-toggler cabecera__hamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img class="cabecera__logo" src="../imagenes/logo-potfolio-wanda.svg" alt="logo portfolio wanda">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 cabecera__menu">
+                        <li class="nav-item cabecera__menu-item">
+                            <a class="nav-link cabecera__menu-item-link" href="../paginas/sobremi.html">SOBRE MI</a>
+                        </li>
+                        <li class="nav-item cabecera__menu-item">
+                            <a class="nav-link cabecera__menu-item-link" href="../paginas/trabajos.html">TRABAJOS</a>
+                        </li>
+                        <li class="nav-item cabecera__menu-item">
+                            <a class="nav-link active cabecera__menu-item-link" aria-current="page"
+                                href="#">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item cabecera__menu-item">
+                            <a class="nav-link cabecera__menu-item-link" href="../paginas/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="contenido row">
         <div class="contenido__info col-md-6 col-12">
-            <h1 class="contenido__titulo">Necesitas un diseño? Yo puedo ayudarte!</h1>
-            <section class="contenido__principal">
+            <h1 class="row contenido__titulo col-md-10 float-md-end text-md-start text-center">Necesitas un diseño? Yo puedo ayudarte!</h1>
+            <section class="contenido__principal col-md-10 float-md-end text-md-start text-center">
                 <p class="contenido__texto">
                     Realizo trabajos de diseño gráfico, diseño industrial y diseño UX/UI.
                 </p>
             </section>
         </div>
-            <div class="contenido__imagen col-md-6 col-12">
-                <img src="../imagenes/foto wanda.jpg" alt="wanda riendose" class="contenido__imagen-foto">
-            </div>
 
+            <div class="contenido__imagen col-md-6 col-12">
+                <img src="../imagenes/foto wanda mirando al costado.jpg" alt="wanda riendose" class="contenido__imagen-foto">
+            </div>
+            <div>
             <p class="contenido__titulos-fotos">
                 Hablamos
             </p>
@@ -70,7 +80,7 @@
             <p class="contenido__titulos-fotos">
                 Planificamos
             </p>
-            <p class="contenido__texto-trabajos">
+            <p class="contenido__texto-trabajos ">
                 Cuando hayamos acordado un paquete diseñado específicamente para sus necesidades, me pondré a trabajar en un moodboard y una estrategia para su identidad visual. Se trata de colores, estilo y tipos de letra, pero también de cómo quiere que se sientan sus clientes cuando consideren su negocio.
             </p>
             <p class="contenido__titulos-fotos">
@@ -85,15 +95,22 @@
             <p class="contenido__texto-trabajos">
                 Una vez que se apruebe el diseño, me pondré a trabajar en sus tarjetas de presentación y otros materiales acordados, ¡y nos pondremos en marcha! Te enviaré los archivos que necesitas y finalmente podrás compartir tu nueva identidad visual con tus clientes. ¡Sorprendelos!
             </p>
-    </main>
+        </div>
+        </main>
 
     <footer class="footer row">
-        <p class="footer__contacto col">
-            Wanda Esmeralda Fuentes
-            wandasmeralda@gmail.com
-            Córdoba Capital, Arg.
-        </p>
-        <ul class="footer__redes row col-md-8">
+        <div class="col text-md-start text-center">
+            <p class="footer__contacto">
+                Wanda Esmeralda Fuentes
+            </p>
+            <p class="footer__contacto">
+                wandasmeralda@gmail.com
+            </p>
+            <p class="footer__contacto">
+                Córdoba Capital, Arg.
+            </p>
+        </div>
+        <ul class="footer__redes row col-md-6">
             <li class="footer__redes-item col-auto">
                 <a href="https://www.linkedin.com/in/wanda-esmeralda-fuentes-99b6a7191/" target="_blank">
                     <img class="footer__redes-logo" src="../imagenes/Icono linkedin.svg" alt="Linkedin">
@@ -105,7 +122,7 @@
                 </a>
             </li>
         </ul>
-        <p class="footer__derechos col">
+        <p class="footer__derechos col text-md-end text-center">
             Todos los derechos reservados
         </p>
     </footer>

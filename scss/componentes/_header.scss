@@ -7,7 +7,19 @@
 
     &__logo {
         height: 30px;
-        margin: 20px 40px;
+        margin: 20px 1rem;
+    }
+
+    .navbar-toggler {
+        border-color: transparent;
+
+        &:focus {
+            box-shadow: 0 0 0 0.10rem;
+        }
+    }
+
+    .navbar-collapse {
+        flex-grow: unset;
     }
 
     &__menu {
@@ -26,10 +38,6 @@
             &:hover {
                 transform: scale(1.1);
                 animation-duration: 3s;
-            }
-
-            &-link:hover {
-                color: $color-fondo;
             }
         };
     };

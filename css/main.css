@@ -16,7 +16,13 @@
   background-position: center; }
   .cabecera__logo {
     height: 30px;
-    margin: 20px 40px; }
+    margin: 20px 1rem; }
+  .cabecera .navbar-toggler {
+    border-color: transparent; }
+    .cabecera .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.10rem; }
+  .cabecera .navbar-collapse {
+    flex-grow: unset; }
   .cabecera__menu {
     align-items: center;
     margin: 0; }
@@ -31,15 +37,13 @@
       .cabecera__menu-item:hover {
         transform: scale(1.1);
         animation-duration: 3s; }
-      .cabecera__menu-item-link:hover {
-        color: #F8F1F1; }
 
 .contenido__info {
-  height: fit-content; }
+  height: fit-content;
+  margin-top: 50px; }
 
 .contenido__titulo {
   font-family: "Aclonica", sans-serif;
-  margin: 100px 0px 0px 100px;
   font-weight: 600;
   font-size: 48px; }
   .contenido__titulo-trabajos {
@@ -48,6 +52,13 @@
     font-weight: 600;
     font-size: 48px;
     display: flex;
+    justify-content: center; }
+
+.contenido__principal {
+  display: flex;
+  flex-direction: column; }
+  .contenido__principal--contacto {
+    flex-direction: row;
     justify-content: center; }
 
 .contenido__secundario {
@@ -60,21 +71,22 @@
   margin: 0px 0px 20px 0px;
   font-family: "Aclonica", sans-serif;
   font-size: 24px; }
-  .contenido__subtitulos-sobremi {
-    display: flex;
-    justify-content: left;
+  .contenido__subtitulos--sobremi {
     font-family: "Aclonica", sans-serif;
-    font-size: 24px;
-    margin: 50px 0px 20px 200px; }
+    font-size: 24px; }
 
-.contenido__titulos-fotos, .contenido__lista {
+.contenido__skills {
+  margin: 50px 0; }
+
+.contenido__titulos-fotos,
+.contenido__lista {
   font-family: "Montserrat", sans-serif;
-  margin-left: 80px;
-  font-weight: 500; }
+  font-weight: 500;
+  list-style-type: circle; }
 
 .contenido__texto {
   color: black;
-  margin: 20px 100px 0px 100px;
+  margin: 20px 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400; }
 
@@ -83,13 +95,14 @@
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin: 0px 70px 50px 70px; }
+  margin: 0px 70px 50px 0; }
 
 .contenido__imagen {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 50px 0; }
   .contenido__imagen-foto {
-    width: 400px; }
+    max-width: 400px; }
   .contenido__imagen-trabajos {
     width: 100%; }
 
@@ -106,17 +119,40 @@
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 600;
-  text-decoration: underline;
-  margin: 15px 0px 50px 90px;
-  padding: 10px; }
-
-.contenido--contacto {
-  display: flex; }
+  text-decoration: underline; }
 
 .contenido__formulario {
-  border: 2px solid black;
-  width: 400px;
-  height: 500px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 3px solid black;
+  height: 500px;
+  max-width: 400px;
+  padding: 10px 0;
+  margin: 50px 0; }
+  .contenido__formulario-campo {
+    background-color: #F8F1F1;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 0; }
+    .contenido__formulario-campo:focus {
+      background-color: #F8F1F1;
+      border: none;
+      border-bottom: 2px solid black;
+      border-radius: 0;
+      box-shadow: none; }
+  .contenido__formulario-label {
+    font-family: "Aclonica", sans-serif; }
+  .contenido__formulario-descripcion {
+    font-family: "Montserrat", sans-serif; }
+  .contenido__formulario-consulta {
+    background-color: #F8F1F1;
+    border: 2px solid black;
+    border-radius: 0; }
+    .contenido__formulario-consulta:focus {
+      background-color: #F8F1F1;
+      border: 2px solid black; }
 
 .contenido__destellos {
   width: 60px; }
@@ -145,18 +181,18 @@
 
 .footer {
   align-items: center;
-  height: 100px;
+  min-height: 100px;
   justify-content: center;
   background-image: url("../imagenes/fondo-header-footer.svg");
   background-size: cover;
   background-position: center; }
   .footer__contacto, .footer__derechos {
-    margin: 0 20px;
+    margin: 10px 20px;
     font-size: 12px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500; }
   .footer__redes {
-    margin: 0;
+    margin: 10px 0;
     justify-content: center;
     align-items: center; }
     .footer__redes-item {

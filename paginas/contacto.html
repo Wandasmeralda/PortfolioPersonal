@@ -28,61 +28,78 @@
 
 <body class="fondo container-fluid">
     <header class="cabecera row">
-        <a href="../index.html" class="cabecera__home-link col-md-3 col-12">
-            <img src="../imagenes/logo-potfolio-wanda.svg" alt="logo portfolio WandaEsmeralda"
-                class="cabecera__logo col-md-3 col-12">
-        </a>
-
-        <nav class="cabecera__navegacion col-md-6 offset-md-3 col-12">
-            <ul class="cabecera__menu row">
-                <li class="cabecera__menu-item col">
-                    <a class="cabecera__menu-item-link" href="../paginas/sobremi.html">SOBRE MI</a>
-                </li>
-                <li class="cabecera__menu-item col">
-                    <a class="cabecera__menu-item-link" href="../paginas/trabajos.html">TRABAJOS</a>
-                </li>
-                <li class="cabecera__menu-item col">
-                    <a class="cabecera__menu-item-link" href="../paginas/servicios.html">SERVICIOS</a>
-                </li>
-                <li class="cabecera__menu-item col">
-                    <a class="cabecera__menu-item-link" href="#">CONTACTO</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light cabecera__navegacion">
+            <div class="container-fluid">
+                <button class="navbar-toggler cabecera__hamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <img class="cabecera__logo" src="../imagenes/logo-potfolio-wanda.svg" alt="logo portfolio wanda">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 cabecera__menu">
+                        <li class="nav-item cabecera__menu-item">
+                            <a class="nav-link cabecera__menu-item-link" href="../paginas/sobremi.html">SOBRE MI</a>
+                        </li>
+                        <li class="nav-item cabecera__menu-item">
+                            <a class="nav-link cabecera__menu-item-link" href="../paginas/trabajos.html">TRABAJOS</a>
+                        </li>
+                        <li class="nav-item cabecera__menu-item">
+                            <a class="nav-link cabecera__menu-item-link" href="../paginas/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item cabecera__menu-item">
+                            <a class="nav-link active cabecera__menu-item-link" aria-current="page"
+                                href="">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="contenido contenido--contacto row">
-        <div class="contenido__info col-md-6 col-12">
-            <h1 class="row contenido__titulo">Si algo de todo esto te gusto, Contactame!</h1>
+        <div class="contenido__info col-md-6">
+            <h1 class="row contenido__titulo col-md-10 float-md-end text-md-start text-center">Si algo de todo esto te
+                gusto, Contactame!</h1>
         </div>
-        <section class="contenido__principal col-md-6">
-            <form class="contenido__formulario">
-                <div>
-                    <label for="nombre completo">Nombre y apellido</label>
-                    <input type="text" id="nombre completo">
+        <section class="contenido__principal contenido__principal--contacto col-md-6">
+            <form class="contenido__formulario col-md-10 col-12">
+                <div class="form-floating mb-3 col-9">
+                    <input type="text" class="form-control contenido__formulario-campo" id="nombreCompleto"
+                        aria-describedby="nameHelp" placeholder="Tu Nombre">
+                    <label for="nombreCompleto" class="form-label contenido__formulario-label">Tu Nombre</label>
+                    <div id="nameHelp" class="form-text contenido__formulario-descripcion">Para conocerte mejor</div>
                 </div>
-                <div>
-                    <label for="mail">E-mail</label>
-                    <input type="text" id="mail">
+                <div class="form-floating mb-3 col-9">
+                    <input type="email" class="form-control contenido__formulario-campo" id="mail"
+                        aria-describedby="emailHelp" placeholder="Tu Email">
+                    <label for="mail" class="form-label contenido__formulario-label">Tu Email</label>
+                    <div id="emailHelp" class="form-text contenido__formulario-descripcion">Para poder contestarte</div>
                 </div>
-                <div>
-                    <label for="consulta">Consulta</label>
-                    <input type="text" id="consulta">
+                <div class="mb-3 col-9">
+                    <label for="consulta" class="form-label contenido__formulario-label">Tu Consulta</label>
+                    <textarea class="form-control contenido__formulario-consulta" id="consulta" rows="6"></textarea>
                 </div>
-                <div class="boton">
-                    <a href="./contacto.html" Enviar></a>
-                </div>
+                <a type="submit" href="../index.html" class="btn contenido__boton">Enviar</a>
             </form>
         </section>
     </main>
 
     <footer class="footer row">
-        <p class="footer__contacto col">
-            Wanda Esmeralda Fuentes
-            wandasmeralda@gmail.com
-            Córdoba Capital, Arg.
-        </p>
-        <ul class="footer__redes row col-md-8">
+        <div class="col text-md-start text-center">
+            <p class="footer__contacto">
+                Wanda Esmeralda Fuentes
+            </p>
+            <p class="footer__contacto">
+                wandasmeralda@gmail.com
+            </p>
+            <p class="footer__contacto">
+                Córdoba Capital, Arg.
+            </p>
+        </div>
+        <ul class="footer__redes row col-md-6">
             <li class="footer__redes-item col-auto">
                 <a href="https://www.linkedin.com/in/wanda-esmeralda-fuentes-99b6a7191/" target="_blank">
                     <img class="footer__redes-logo" src="../imagenes/Icono linkedin.svg" alt="Linkedin">
@@ -94,7 +111,7 @@
                 </a>
             </li>
         </ul>
-        <p class="footer__derechos col">
+        <p class="footer__derechos col text-md-end text-center">
             Todos los derechos reservados
         </p>
     </footer>
