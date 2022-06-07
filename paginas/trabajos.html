@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--SEO-->
-    <meta name="keywords" content="diseño, portfolio, portfolio personal, diseño grafico, diseño industrial, trabajos, logotipo, marcas, branding, presupuesto, Redes sociales, UX, UI">
-    <meta name="description" content="Portfolio personal donde muestro con imágenes un poco de los trabajos realizados para clientes, los cuales tienen un link para poder acceder a mi página de Behance y mirarlos detalladamente.">
+    <meta name="keywords"
+        content="diseño, portfolio, portfolio personal, diseño grafico, diseño industrial, trabajos, logotipo, marcas, branding, presupuesto, Redes sociales, UX, UI">
+    <meta name="description"
+        content="Portfolio personal donde muestro con imágenes un poco de los trabajos realizados para clientes, los cuales tienen un link para poder acceder a mi página de Behance y mirarlos detalladamente.">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="../imagenes/logo-portfolio.png" type="image/x-icon">
     <title>PortfolioPersonalWandaEsmeralda/trabajos</title>
@@ -57,50 +59,153 @@
         </nav>
     </header>
 
-    <h1 class="contenido__titulo-trabajos">Mis trabajos</h1>
-
     <main class="contenido row">
-        <p class="contenido__subtitulos">Diseño Industrial</p>
-        <p class="contenido__titulos-fotos">
-            GIA - Pinza Laparoscópica Ergonómica (2020)
-        </p>
-        <img src="../imagenes/GIA.jpg" alt="GIA" class="contenido__imagen-trabajos">
-            <a href="https://www.behance.net/gallery/110559427/TRABAJO-FINAL-DISENO-INDUSTRIAL" class="contenido__link">Ver más</a>
-        <p class="contenido__texto-trabajos">
-            GÍA es el resultado final de la tesis de la carrera de Diseño Industrial. Dónde la problemátca fue “Posturas forzadas de cirujanos durante la intervención quirúrgica con la técnica laparoscópica dentro del quirófano”. 
-            Se trabajó desde la búsqueda de una problemática dentro del ámbito médico, pasando por la investigación, conceptualización, diseño, verificación, hasta la estrategia de comercialización.
-        </p>
+        <h1 class="contenido__titulo--trabajos">Mis trabajos</h1>
 
-        <p class="contenido__subtitulos">Diseño Gráfico</p>
-        <p class="contenido__titulos-fotos">
-            Simón Dice (2018)
-        </p>
-        <img src="../imagenes/SimonDice.jpg" alt="GIA" class="contenido__imagen-trabajos">
-            <a href="https://www.behance.net/gallery/110611907/DISENO-DE-LOGO-Simon-Dice" class="contenido__link">Ver más</a>
-        <p class="contenido__texto-trabajos">
-            Diseño de marca para emprendimiento de venta de ropa para niñxs entre 0 y 10 años.
-        </p>
+        <div id="carouselExampleCaptions" class="carousel slide contenido__carruselTrabajos" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                    aria-label="Slide 0"></button>
+            </div>
 
-        <p class="contenido__titulos-fotos">
-            Pepita's Club (2020)
-        </p>
-        <img src="../imagenes/PepitasClub.jpg" alt="GIA" class="contenido__imagen-trabajos">
-            <a href="https://www.behance.net/gallery/128300035/Manual-de-marca-Pepitas-Club" class="contenido__link">Ver más</a>
-        <p class="contenido__texto-trabajos">
-            Diseño de marca para guardería de perros.
-        </p>
-
-       <!-- <img src="../imagenes/Destellos-16.svg" alt="Destellos" class="contenido__destellos"> --> 
-
-        <p class="contenido__subtitulos">Diseño UX/UI</p>
-        <p class="contenido__titulos-fotos">
-            VotAR (2020)
-        </p>
-        <img src="../imagenes/VotAR.jpg" alt="GIA" class="contenido__imagen-trabajos">
-            <a href="https://www.behance.net/gallery/128960403/VotAR-Trabajo-final-Diseno-UXUI-CoderHouse" class="contenido__link">Ver más</a>
-        <p class="contenido__texto-trabajos">
-            Diseño de aplicación para la búsqueda de información electoral. Tanto como de candidatos hasta del lugar a donde ir a emitir el voto.
-        </p>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://www.behance.net/gallery/110559427/TRABAJO-FINAL-DISENO-INDUSTRIAL" target="_blank">
+                        <img src="../imagenes/GIA.jpg" class="d-block w-100" alt="GIA">
+                        <div class="contenido__fondoCarrusel"></div>
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="contenido__subtitulos--sobremi">Diseño Industrial | GIA - Pinza Laparoscópica
+                            Ergonómica (2020)</h5>
+                        <p class="contenido__texto-trabajos">Trabajo final de la carrera Diseño Industrial
+                        </p>
+                        <a href="https://www.behance.net/gallery/110559427/TRABAJO-FINAL-DISENO-INDUSTRIAL"
+                            class="contenido__link contenido__link--carrusel" target="_blank">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.behance.net/gallery/110611907/DISENO-DE-LOGO-Simon-Dice" target="_blank">
+                        <img src="../imagenes/SimonDice.jpg" class="d-block w-100" alt="SimonDice">
+                        <div class="contenido__fondoCarrusel"></div>
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="contenido__subtitulos--sobremi">Diseño Gráfico | Simón Dice (2018)</h5>
+                        <p class="contenido__texto-trabajos">Diseño de marca para emprendimiento de venta de ropa
+                            para
+                            niñxs entre 0 y 10 años.</p>
+                        <a href="https://www.behance.net/gallery/110611907/DISENO-DE-LOGO-Simon-Dice"
+                            class="contenido__link contenido__link--carrusel" target="_blank">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.behance.net/gallery/110602919/IMAGEN-VISUAL-Sanamente" target="_blank">
+                        <img src="../imagenes/SanamenteElaboraciones.jpg" class="d-block w-100"
+                            alt="SanamenteElaboraciones">
+                        <div class="contenido__fondoCarrusel"></div>
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="contenido__subtitulos--sobremi">Diseño Gráfico | Sanamente Elaboraciones (2019)
+                        </h5>
+                        <p class="contenido__texto-trabajos">Diseño de marca para emprendimiento de venta de comida
+                            saludable</p>
+                        <a href="https://www.behance.net/gallery/110602919/IMAGEN-VISUAL-Sanamente"
+                            class="contenido__link contenido__link--carrusel" target="_blank">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.behance.net/gallery/117536993/DISENO-DE-LOGO-Aromas-Julie" target="_blank">
+                        <img src="../imagenes/AromasJulie.jpg" class="d-block w-100" alt="AromasJulie">
+                        <div class="contenido__fondoCarrusel"></div>
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="contenido__subtitulos--sobremi">Diseño Gráfico | AromasJulie (2019)</h5>
+                        <p class="contenido__texto-trabajos">Diseño de marca para emprendimiento de Aromas para el
+                            hogar
+                        </p>
+                        <a href="https://www.behance.net/gallery/117536993/DISENO-DE-LOGO-Aromas-Julie"
+                            class="contenido__link contenido__link--carrusel" target="_blank">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.behance.net/gallery/126586089/ISOLOGOTIPO-NOCCIOLINE-MERCATO-NATURALE"
+                        target="_blank">
+                        <img src="../imagenes/Noccioline.jpg" class="d-block w-100" alt="Noccioline">
+                        <div class="contenido__fondoCarrusel"></div>
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="contenido__subtitulos--sobremi">Diseño Gráfico | Noccioline (2021)</h5>
+                        <p class="contenido__texto-trabajos">Diseño de marca para emprendimiento de venta de frutos
+                            secos</p>
+                        <a href="https://www.behance.net/gallery/126586089/ISOLOGOTIPO-NOCCIOLINE-MERCATO-NATURALE"
+                            class="contenido__link contenido__link--carrusel" target="_blank">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.behance.net/gallery/128300035/Manual-de-marca-Pepitas-Club" target="_blank">
+                        <img src="../imagenes/PepitasClub.jpg" class="d-block w-100" alt="PepitasClub">
+                        <div class="contenido__fondoCarrusel"></div>
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="contenido__subtitulos--sobremi">Diseño Gráfico | Pepita's Club (2021)</h5>
+                        <p class="contenido__texto-trabajos">Diseño de marca para guardería de perros.</p>
+                        <a href="https://www.behance.net/gallery/128300035/Manual-de-marca-Pepitas-Club"
+                            class="contenido__link contenido__link--carrusel" target="_blank">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.behance.net/gallery/128960403/VotAR-Trabajo-final-Diseno-UXUI-CoderHouse"
+                        target="_blank">
+                        <img src="../imagenes/VotAR.jpg" class="d-block w-100" alt="...">
+                        <div class="contenido__fondoCarrusel"></div>
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="contenido__subtitulos--sobremi">DISEÑO UX/UI | VotAR (2020)</h5>
+                        <p class="contenido__texto-trabajos">Diseño de aplicación para la búsqueda de información
+                            electoral. Tanto como de candidatos hasta
+                            del lugar a donde ir a emitir el voto.</p>
+                        <a href="https://www.behance.net/gallery/128960403/VotAR-Trabajo-final-Diseno-UXUI-CoderHouse"
+                            class="contenido__link contenido__link--carrusel" target="_blank">Ver más</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.behance.net/gallery/134764513/Proyecto-final-Rediseno-Glassdoor-Coderhouse"
+                        target="_blank">
+                        <img src="../imagenes/Glassdoor.jpg" class="d-block w-100" alt="Glassdoor">
+                        <div class="contenido__fondoCarrusel"></div>
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="contenido__subtitulos--sobremi">Diseño UX/UI | Glassdoor (2020)</h5>
+                        <p class="contenido__texto-trabajos">Rediseño de aplicación para búsqueda laboral.</p>
+                        <a href="https://www.behance.net/gallery/134764513/Proyecto-final-Rediseno-Glassdoor-Coderhouse"
+                            class="contenido__link contenido__link--carrusel" target="_blank">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
 
     <footer class="footer row">
@@ -118,12 +223,12 @@
         <ul class="footer__redes row col-md-6">
             <li class="footer__redes-item col-auto">
                 <a href="https://www.linkedin.com/in/wanda-esmeralda-fuentes-99b6a7191/" target="_blank">
-                    <img class="footer__redes-logo" src="../imagenes/Icono linkedin.svg" alt="Linkedin">
+                    <img class="footer__redes-logo" src="../imagenes/Iconolinkedin.svg" alt="Linkedin">
                 </a>
             </li>
             <li class="footer__redes-item col-auto">
                 <a href="https://www.behance.net/wandafuentes" target="_blank">
-                    <img class="footer__redes-logo" src="../imagenes/Icono behance.svg" alt="Behance">
+                    <img class="footer__redes-logo" src="../imagenes/Iconobehance.svg" alt="Behance">
                 </a>
             </li>
         </ul>
@@ -133,9 +238,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-    
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

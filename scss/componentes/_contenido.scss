@@ -1,190 +1,193 @@
-.contenido__info {
-    height: fit-content;
-    margin-top: 50px;
-}
-
-.contenido__titulo {
-    font-family: $tipografia-titulos;
-    // margin: 100px 0px 0px 100px;
-    font-weight: map-get($grosor-tipografia, "semibold");
-    font-size: map-get($tamaño-tipografia, "titulos");
-
-    &-trabajos {
+.contenido {
+    &__info {
+        height: fit-content;
+        margin-top: 50px;
+    }
+    
+    &__titulo {
         font-family: $tipografia-titulos;
-        margin: 80px 0px 50px 0px;
         font-weight: map-get($grosor-tipografia, "semibold");
         font-size: map-get($tamaño-tipografia, "titulos");
+    
+        &--trabajos {
+            font-family: $tipografia-titulos;
+            margin: 50px 0;
+            font-weight: map-get($grosor-tipografia, "semibold");
+            font-size: map-get($tamaño-tipografia, "titulos");
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    &__principal {
+        display: flex;
+        flex-direction: column;
+    
+        &--contacto {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    
+    &__secundario {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__subtitulos {
         display: flex;
         justify-content: center;
-    }
-}
-
-.contenido__principal {
-    display: flex;
-    flex-direction: column;
-
-    &--contacto {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-.contenido__secundario {
-    display: flex;
-    justify-content: space-around;
-}
-
-.contenido__subtitulos {
-    display: flex;
-    justify-content: center;
-    margin: 0px 0px 20px 0px;
-    font-family: $tipografia-titulos;
-    font-size: map-get($tamaño-tipografia, "subtitulos");
-
-    &--sobremi {
+        margin: 0px 0px 20px 0px;
         font-family: $tipografia-titulos;
         font-size: map-get($tamaño-tipografia, "subtitulos");
+    
+        &--sobremi {
+            font-family: $tipografia-titulos;
+            font-size: map-get($tamaño-tipografia, "subtitulos");
+        }
     }
-}
-
-.contenido__skills {
-    margin: 50px 0;
-}
-
-.contenido__titulos-fotos,
-.contenido__lista {
-    font-family: $tipografia-textos;
-    font-size: map-get($tamaño-tipografia, "textos");
-    font-weight: map-get($grosor-tipografia, "medium");
-    list-style-type: circle;
-}
-
-
-.contenido__texto {
-    color: $color-tipografia;
-    font-size: map-get($tamaño-tipografia, "textos");
-    margin: 20px 0;
-    font-family: $tipografia-textos;
-    font-weight: map-get($grosor-tipografia, "regular");
-}
-
-.contenido__texto-trabajos {
-    color: $color-tipografia;
-    font-size: map-get($tamaño-tipografia, "menu");
-    font-family: $tipografia-textos;
-    font-weight: map-get($grosor-tipografia, "regular");
-    margin: 0px 70px 50px 0;
-}
-
-.contenido__imagen {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-
-    &-foto {
-        max-width: 400px;
+    
+    &__skills {
+        margin: 50px 0;
     }
-
-    &-trabajos {
+    
+    &__lista {
+        font-family: $tipografia-textos;
+        font-size: map-get($tamaño-tipografia, "textos");
+        font-weight: map-get($grosor-tipografia, "medium");
+        list-style-type: circle;
+    }
+    
+    &__servicios {
+        margin-bottom: 50px;
+    }
+    
+    .card {
+        border: 3px solid black;
+    
+        &-header {
+            background-color: $color-fondo;
+            font-family: $tipografia-titulos;
+        }
+    
+        &-body {
+            background-color: $color-fondo;
+            font-family: $tipografia-textos;
+        }
+    }
+    
+    &__texto {
+        color: $color-tipografia;
+        font-size: map-get($tamaño-tipografia, "textos");
+        margin: 20px 0;
+        font-family: $tipografia-textos;
+        font-weight: map-get($grosor-tipografia, "regular");
+    }
+    
+    &__texto-trabajos {
+        font-size: map-get($tamaño-tipografia, "menu");
+        font-family: $tipografia-textos;
+        font-weight: map-get($grosor-tipografia, "regular");
+    }
+    
+    &__imagen {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    
+        &-foto {
+            max-width: 400px;
+        }
+    
+        &-trabajos {
+            width: 100%;
+        }
+    }
+    
+    &__carruselTrabajos {
+        margin-bottom: 50px;
+    }
+    
+    &__fondoCarrusel{
+        background: linear-gradient(0deg, black, transparent);
+        height: 75%;
         width: 100%;
+        position: absolute;
+        bottom: 0rem;
     }
-}
-
-.contenido__link {
-    font-family: $tipografia-textos;
-    font-size: map-get($tamaño-tipografia , "letra-chica");
-    text-decoration: underline;
-    @include margenes(5px 70px, 10px);
-    font-weight: map-get($grosor-tipografia , "semibold");
-}
-
-.contenido__boton {
-    color: $color-tipografia;
-    font-family: $tipografia-textos;
-    font-size: map-get($tamaño-tipografia , "botones");
-    font-weight: map-get($grosor-tipografia , "semibold");
-    text-decoration: underline;
-}
-
-.contenido__formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 3px solid black;
-    height: 500px;
-    max-width: 400px;
-    padding: 10px 0;
-    margin: 50px 0;
-
-    &-campo {
-        background-color: $color-fondo;
-        border: none;
-        border-bottom: 2px solid black;
-        border-radius: 0;
-
-        &:focus {
+    
+    &__link {
+        font-family: $tipografia-textos;
+        font-size: map-get($tamaño-tipografia , "letra-chica");
+        text-decoration: underline;
+        @include margenes(5px 70px, 10px);
+        font-weight: map-get($grosor-tipografia , "semibold");
+    
+        &--carrusel {
+            display: inline-block;
+            color: $color-fondo;
+    
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    
+    &__boton {
+        color: $color-tipografia;
+        font-family: $tipografia-textos;
+        font-size: map-get($tamaño-tipografia , "botones");
+        font-weight: map-get($grosor-tipografia , "semibold");
+        text-decoration: underline;
+    }
+    
+    &__formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 3px solid black;
+        height: 500px;
+        max-width: 400px;
+        padding: 10px 0;
+        margin: 50px 0;
+    
+        &-campo {
             background-color: $color-fondo;
             border: none;
             border-bottom: 2px solid black;
             border-radius: 0;
-            box-shadow: none;
+    
+            &:focus {
+                background-color: $color-fondo;
+                border: none;
+                border-bottom: 2px solid black;
+                border-radius: 0;
+                box-shadow: none;
+            }
         }
-    }
-
-    &-label {
-        font-family: $tipografia-titulos;
-    }
-
-    &-descripcion {
-        font-family: $tipografia-textos;
-    }
-
-    &-consulta {
-        background-color: $color-fondo;
-        border: 2px solid black;
-        border-radius: 0;
-
-        &:focus {
+    
+        &-label {
+            font-family: $tipografia-titulos;
+        }
+    
+        &-descripcion {
+            font-family: $tipografia-textos;
+        }
+    
+        &-consulta {
             background-color: $color-fondo;
             border: 2px solid black;
+            border-radius: 0;
+    
+            &:focus {
+                background-color: $color-fondo;
+                border: 2px solid black;
+            }
         }
     }
-}
-
-.contenido__destellos {
-    width: 60px;
-}
-
-.logoAnimado {
-    width: 80px;
-    animation-name: rotarLogo;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-delay: 1s;
-    position: absolute;
-    z-index: 1;
-}
-
-/* ANIMACIÓN ICONO GIRATORIO*/
-@keyframes rotarLogo {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(45deg);
-    }
-
-    50% {
-        transform: rotate(90deg);
-    }
-
-    75% {
-        transform: rotate(180deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
+    
+    &__destellos {
+        width: 60px;
     }
 }

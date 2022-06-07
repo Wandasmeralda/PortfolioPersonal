@@ -16,7 +16,11 @@
   background-position: center; }
   .cabecera__logo {
     height: 30px;
-    margin: 20px 1rem; }
+    margin: 20px 1rem;
+    animation-name: rotarLogo;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 1s; }
   .cabecera .navbar-toggler {
     border-color: transparent; }
     .cabecera .navbar-toggler:focus {
@@ -38,6 +42,19 @@
         transform: scale(1.1);
         animation-duration: 3s; }
 
+/* ANIMACIÓN ICONO GIRATORIO*/
+@keyframes rotarLogo {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(45deg); }
+  50% {
+    transform: rotate(90deg); }
+  75% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 .contenido__info {
   height: fit-content;
   margin-top: 50px; }
@@ -46,9 +63,9 @@
   font-family: "Aclonica", sans-serif;
   font-weight: 600;
   font-size: 48px; }
-  .contenido__titulo-trabajos {
+  .contenido__titulo--trabajos {
     font-family: "Aclonica", sans-serif;
-    margin: 80px 0px 50px 0px;
+    margin: 50px 0;
     font-weight: 600;
     font-size: 48px;
     display: flex;
@@ -78,11 +95,22 @@
 .contenido__skills {
   margin: 50px 0; }
 
-.contenido__titulos-fotos,
 .contenido__lista {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   list-style-type: circle; }
+
+.contenido__servicios {
+  margin-bottom: 50px; }
+
+.contenido .card {
+  border: 3px solid black; }
+  .contenido .card-header {
+    background-color: #F8F1F1;
+    font-family: "Aclonica", sans-serif; }
+  .contenido .card-body {
+    background-color: #F8F1F1;
+    font-family: "Montserrat", sans-serif; }
 
 .contenido__texto {
   color: black;
@@ -91,11 +119,9 @@
   font-weight: 400; }
 
 .contenido__texto-trabajos {
-  color: black;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  margin: 0px 70px 50px 0; }
+  font-weight: 400; }
 
 .contenido__imagen {
   display: flex;
@@ -106,6 +132,16 @@
   .contenido__imagen-trabajos {
     width: 100%; }
 
+.contenido__carruselTrabajos {
+  margin-bottom: 50px; }
+
+.contenido__fondoCarrusel {
+  background: linear-gradient(0deg, black, transparent);
+  height: 75%;
+  width: 100%;
+  position: absolute;
+  bottom: 0rem; }
+
 .contenido__link {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -113,6 +149,11 @@
   margin: 5px 70px;
   padding: 10px;
   font-weight: 600; }
+  .contenido__link--carrusel {
+    display: inline-block;
+    color: #F8F1F1; }
+    .contenido__link--carrusel:hover {
+      color: white; }
 
 .contenido__boton {
   color: black;
@@ -156,28 +197,6 @@
 
 .contenido__destellos {
   width: 60px; }
-
-.logoAnimado {
-  width: 80px;
-  animation-name: rotarLogo;
-  animation-iteration-count: infinite;
-  animation-duration: 4s;
-  animation-delay: 1s;
-  position: absolute;
-  z-index: 1; }
-
-/* ANIMACIÓN ICONO GIRATORIO*/
-@keyframes rotarLogo {
-  0% {
-    transform: rotate(0deg); }
-  25% {
-    transform: rotate(45deg); }
-  50% {
-    transform: rotate(90deg); }
-  75% {
-    transform: rotate(180deg); }
-  100% {
-    transform: rotate(360deg); } }
 
 .footer {
   align-items: center;

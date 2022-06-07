@@ -8,6 +8,10 @@
     &__logo {
         height: 30px;
         margin: 20px 1rem;
+        animation-name: rotarLogo;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-delay: 1s;
     }
 
     .navbar-toggler {
@@ -39,6 +43,29 @@
                 transform: scale(1.1);
                 animation-duration: 3s;
             }
-        };
-    };
-};
+        }
+    }
+}
+
+/* ANIMACIÓN ICONO GIRATORIO*/
+@keyframes rotarLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    75% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
